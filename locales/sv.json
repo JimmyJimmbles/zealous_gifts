@@ -11,7 +11,7 @@
     },
     "404": {
       "title": "404 det gick inte att hitta sidan",
-      "subtext_html": "Sidan du letade efter finns inte. <a href=\"{{ link }}\" class=\"text-link\">Klicka här</a> för att fortsätta handla."
+      "subtext_html": "Sidan du letade efter finns inte. <a href=\"{{ link }}\" class=\"text-link\">Klicka här<\/a> för att fortsätta handla."
     },
     "pagination": {
       "previous": "Föregående",
@@ -24,7 +24,7 @@
       "login_form_submit": "Ange",
       "signup_form_email_label": "E-post",
       "signup_form_success": "Vi kommer att skicka ett e-postmeddelande precis innan vi öppnar!",
-      "admin_link_html": "Är det du som är butiksägare? <a href=\"/admin\" class=\"text-link\">Logga in här</a>",
+      "admin_link_html": "Är det du som är butiksägare? <a href=\"\/admin\" class=\"text-link\">Logga in här<\/a>",
       "password_link": "Ange lösenord för att ta dig in",
       "powered_by_shopify_html": "Denna butik kommer att drivas av {{ shopify }}",
       "close": "stäng (esc)"
@@ -91,13 +91,13 @@
       "note": "Särskilda instruktioner till säljaren",
       "subtotal": "Delsumma",
       "taxes_and_shipping_at_checkout": "Skatter och frakt beräknas vid utcheckning",
-      "taxes_and_shipping_policy_at_checkout_html": "Skatter och <a href=\"{{ link }}\">frakt</a> beräknas vid utcheckning",
+      "taxes_and_shipping_policy_at_checkout_html": "Skatter och <a href=\"{{ link }}\">frakt<\/a> beräknas vid utcheckning",
       "taxes_included_but_shipping_at_checkout": "Skatt ingår och frakt beräknas vid utcheckning",
-      "taxes_included_and_shipping_policy_html": "Skatt ingår. <a href=\"{{ link }}\">Frakt</a> beräknas vid utcheckning.",
+      "taxes_included_and_shipping_policy_html": "Skatt ingår. <a href=\"{{ link }}\">Frakt<\/a> beräknas vid utcheckning.",
       "update": "Uppdatera varukorg",
       "checkout": "Till kassan",
       "empty": "Din varukorg är för tillfället tom.",
-      "continue_browsing_html": "Fortsätt att bläddra <a href=\"{{ link }}\">här</a>.",
+      "continue_browsing_html": "Fortsätt att bläddra <a href=\"{{ link }}\">här<\/a>.",
       "close_cart": "Stäng varukorg",
       "savings_html": "Du sparar {{ savings }}",
       "reduce_quantity": "Minska varukvantiteten med en",
@@ -157,7 +157,7 @@
       "address1": "Adress 1",
       "address2": "Adress 2",
       "city": "Stad",
-      "country": "Land/Region",
+      "country": "Land\/Region",
       "province": "Provins",
       "zip": "Postnummer",
       "phone": "Telefon",
@@ -235,7 +235,7 @@
   },
   "home_page": {
     "slideshow": {
-      "navigation_instructions": "Använd vänster-/högerpil för att navigera i bildspelet eller svep åt vänster/höger om du använder en mobil enhet",
+      "navigation_instructions": "Använd vänster-\/högerpil för att navigera i bildspelet eller svep åt vänster\/höger om du använder en mobil enhet",
       "next_slide": "Nästa bild",
       "previous_slide": "Föregående bild",
       "play": "Spela bildspel",
@@ -254,7 +254,7 @@
     "map": {
       "address_error": "Det gick inte att hitta den adressen",
       "address_no_results": "Inga resultat för den adressen",
-      "address_query_limit_html": "Du har överskridit användningsgränsen för Google API. Överväg att uppgradera till en <a href=\"https://developers.google.com/maps/premium/usage-limits\">premiumplan</a>.",
+      "address_query_limit_html": "Du har överskridit användningsgränsen för Google API. Överväg att uppgradera till en <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">premiumplan<\/a>.",
       "auth_error_html": "Det gick inte att autentisera ditt Google Maps-konto."
     }
   },
@@ -274,12 +274,12 @@
   },
   "products": {
     "general": {
-      "save_html": "Spara <br />{{ saved_amount }}",
+      "save_html": "Spara <br \/>{{ saved_amount }}",
       "collection_return": "Gå tillbaka till {{ collection }}",
       "sale_price": "Försäljningspris",
       "regular_price": "Ordinarie pris",
       "include_taxes": "Skatt ingår.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Frakt</a> beräknas i kassan.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Frakt<\/a> beräknas i kassan.",
       "unit_price": "Enhetspris"
     },
     "product": {

@@ -11,7 +11,7 @@
     },
     "404": {
       "title": "404 पेज नहीं मिला",
-      "subtext_html": "आपके द्वारा जिस पेज का अनुरोध किया गया हैं वह मौजूद नहीं है. शॉपिंग जारी रखने के लिए <a href=\"{{ link }}\" class=\"text-link\">यहां क्लिक करें</a>."
+      "subtext_html": "आपके द्वारा जिस पेज का अनुरोध किया गया हैं वह मौजूद नहीं है. शॉपिंग जारी रखने के लिए <a href=\"{{ link }}\" class=\"text-link\">यहां क्लिक करें<\/a>."
     },
     "pagination": {
       "previous": "पिछला",
@@ -24,7 +24,7 @@
       "login_form_submit": "दर्ज करें",
       "signup_form_email_label": "ईमेल",
       "signup_form_success": "खुलने से ठीक पहले हम आपको एक ईमेल भेजेंगे!",
-      "admin_link_html": "क्या आप स्टोर के मालिक हैं? <a href=\"/admin\" class=\"text-link\">यहां लॉगिन करें</a>",
+      "admin_link_html": "क्या आप स्टोर के मालिक हैं? <a href=\"\/admin\" class=\"text-link\">यहां लॉगिन करें<\/a>",
       "password_link": "पासवर्ड का उपयोग करके प्रवेश करें",
       "powered_by_shopify_html": "यह दुकान {{ shopify }} द्वारा संचालित होगी",
       "close": "बंद करें (esc)"
@@ -91,13 +91,13 @@
       "note": "विक्रेता के लिए खास निर्देश",
       "subtotal": "कुल",
       "taxes_and_shipping_at_checkout": "चेकआउट के दौरान कर और शिपिंग गणना की गई",
-      "taxes_and_shipping_policy_at_checkout_html": "चेकआउट के दौरान कर और <a href=\"{{ link }}\">शिपिंग</a> गणना की गई",
+      "taxes_and_shipping_policy_at_checkout_html": "चेकआउट के दौरान कर और <a href=\"{{ link }}\">शिपिंग<\/a> गणना की गई",
       "taxes_included_but_shipping_at_checkout": "चेकआउट के दौरान कर शामिल किया और शिपिंग की गणना की गई",
-      "taxes_included_and_shipping_policy_html": "कर शामिल है. चेकआउट के दौरान <a href=\"{{ link }}\">शिपिंग</a> की गणना की गई",
+      "taxes_included_and_shipping_policy_html": "कर शामिल है. चेकआउट के दौरान <a href=\"{{ link }}\">शिपिंग<\/a> की गणना की गई",
       "update": "कार्ट अपडेट करें",
       "checkout": "चेक आउट करें",
       "empty": "आपका कार्ट वर्तमान में रिक्त है.",
-      "continue_browsing_html": "<a href=\"{{ link }}\">यहां </a> ब्राउज करना जारी रखें.",
+      "continue_browsing_html": "<a href=\"{{ link }}\">यहां <\/a> ब्राउज करना जारी रखें.",
       "close_cart": "कार्ट बंद करें",
       "savings_html": "आप {{ savings }} की बचत कर रहे हैं",
       "reduce_quantity": "वस्तु की मात्रा एक से कम करें",
@@ -157,9 +157,9 @@
       "address1": "पता1",
       "address2": "पता 2",
       "city": "शहर",
-      "country": "देश / क्षेत्र",
+      "country": "देश \/ क्षेत्र",
       "province": "प्रांत",
-      "zip": "डाक/पिन कोड",
+      "zip": "डाक\/पिन कोड",
       "phone": "फ़ोन",
       "set_default": "डिफ़ॉल्ट पता के रूप में सेट करें",
       "add": "पता जोड़ें",
@@ -235,7 +235,7 @@
   },
   "home_page": {
     "slideshow": {
-      "navigation_instructions": "यदि मोबाइल डिवाइस का उपयोग करते है तो स्लाइड शो या बाएं / दाएं स्वाइप करने के लिए बाएं / दाएं तीर का उपयोग करें",
+      "navigation_instructions": "यदि मोबाइल डिवाइस का उपयोग करते है तो स्लाइड शो या बाएं \/ दाएं स्वाइप करने के लिए बाएं \/ दाएं तीर का उपयोग करें",
       "next_slide": "अगली स्लाइड",
       "previous_slide": "पिछली स्लाइड",
       "play": "स्लाइडशो चलाएं",
@@ -254,7 +254,7 @@
     "map": {
       "address_error": "उस पते को देखने में त्रुटि हुई",
       "address_no_results": "उस पते का कोई परिणाम नहीं है",
-      "address_query_limit_html": "आपने Google API उपयोग की सीमा पार कर ली है. <a href=\"https://developers.google.com/maps/premium/usage-limits\">प्रीमियम योजना</a> में अपग्रेड करने पर विचार करें.",
+      "address_query_limit_html": "आपने Google API उपयोग की सीमा पार कर ली है. <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">प्रीमियम योजना<\/a> में अपग्रेड करने पर विचार करें.",
       "auth_error_html": "आपके Google मैप खाते को प्रमाणति करने में समस्या हुई."
     }
   },
@@ -274,17 +274,17 @@
   },
   "products": {
     "general": {
-      "save_html": "{{ saved_amount }}<br /> सहेजें",
+      "save_html": "{{ saved_amount }}<br \/> सहेजें",
       "collection_return": "{{ collection }} पर वापस जाएं",
       "sale_price": "सेल की कीमत",
       "regular_price": "सामान्य कीमत",
       "include_taxes": "कर शामिल है.",
-      "shipping_policy_html": "चेकआउट के दौरान <a href=\"{{ link }}\">शिपिंग</a> की गणना की गई",
+      "shipping_policy_html": "चेकआउट के दौरान <a href=\"{{ link }}\">शिपिंग<\/a> की गणना की गई",
       "unit_price": "इकाई कीमत"
     },
     "product": {
       "sold_out": "बिक गया",
-      "sold_out_html": "<br /> बिक गया",
+      "sold_out_html": "<br \/> बिक गया",
       "unavailable": "अनुपलब्ध",
       "quantity": "मात्रा",
       "add_to_cart": "कार्ट में जोड़ें",

@@ -11,7 +11,7 @@
     },
     "404": {
       "title": "404 Side Ikke Funnet",
-      "subtext_html": "Siden du leter etter finnes ikke. Klikk <a href=\"{{ link }}\" class=\"text-link\">her</a> for å fortsette å handle."
+      "subtext_html": "Siden du leter etter finnes ikke. Klikk <a href=\"{{ link }}\" class=\"text-link\">her<\/a> for å fortsette å handle."
     },
     "pagination": {
       "previous": "Forrige",
@@ -24,7 +24,7 @@
       "login_form_submit": "Gå inn",
       "signup_form_email_label": "E-postadresse",
       "signup_form_success": "Vi sender deg en e-post rett før vi åpner!",
-      "admin_link_html": "Er du butikkeieren? <a href=\"/admin\" class=\"text-link\">Logg inn her</a>",
+      "admin_link_html": "Er du butikkeieren? <a href=\"\/admin\" class=\"text-link\">Logg inn her<\/a>",
       "password_link": "Gå inn ved hjelp av passord",
       "powered_by_shopify_html": "Denne butikken vil bli drevet av {{ shopify }}",
       "close": "Lukk (esc)"
@@ -91,13 +91,13 @@
       "note": "Spesielle instruksjoner for selger",
       "subtotal": "Delsum",
       "taxes_and_shipping_at_checkout": "Avgifter og frakt beregnes ved kassen",
-      "taxes_and_shipping_policy_at_checkout_html": "Avgifter og <a href=\"{{ link }}\">frakt </a> beregnes ved kassen",
+      "taxes_and_shipping_policy_at_checkout_html": "Avgifter og <a href=\"{{ link }}\">frakt <\/a> beregnes ved kassen",
       "taxes_included_but_shipping_at_checkout": "Avgift inkludert og frakt beregnet ved kassen",
-      "taxes_included_and_shipping_policy_html": "Avgift inkludert. <a href=\"{{ link }}\">Frakt</a> beregnes ved kassen.",
+      "taxes_included_and_shipping_policy_html": "Avgift inkludert. <a href=\"{{ link }}\">Frakt<\/a> beregnes ved kassen.",
       "update": "Oppdater handlekurv",
       "checkout": "Sjekk ut",
       "empty": "Handlekurven din er tom.",
-      "continue_browsing_html": "Fortsett å bla gjennom <a href=\"{{ link }}\">her</a>.",
+      "continue_browsing_html": "Fortsett å bla gjennom <a href=\"{{ link }}\">her<\/a>.",
       "close_cart": "Lukk handlekurv",
       "savings_html": "Du sparer {{ savings }}",
       "reduce_quantity": "Reduser antallet produkter med én",
@@ -157,7 +157,7 @@
       "address1": "Adresse 1",
       "address2": "Adresse 2",
       "city": "By",
-      "country": "Land/region",
+      "country": "Land\/region",
       "province": "Provins",
       "zip": "Postnummer",
       "phone": "Telefon",
@@ -235,7 +235,7 @@
   },
   "home_page": {
     "slideshow": {
-      "navigation_instructions": "Bruk venstre-/høyrepil for å navigere i lysbildefremvisningen eller sveip til venstre/høyre hvis du bruker en mobilenhet",
+      "navigation_instructions": "Bruk venstre-\/høyrepil for å navigere i lysbildefremvisningen eller sveip til venstre\/høyre hvis du bruker en mobilenhet",
       "next_slide": "Neste lysbilde",
       "previous_slide": "Forrige lysbilde",
       "play": "Spill av lysbildefremvisningen",
@@ -254,7 +254,7 @@
     "map": {
       "address_error": "Feil under oppslag av den adressen",
       "address_no_results": "Ingen resultater for den adressen",
-      "address_query_limit_html": "Du har overskredet bruksgrensen for Google API. Vurder å oppgradere til et <a href=\"https://developers.google.com/maps/premium/usage-limits\">Premiumsabonnement</a>.",
+      "address_query_limit_html": "Du har overskredet bruksgrensen for Google API. Vurder å oppgradere til et <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premiumsabonnement<\/a>.",
       "auth_error_html": "Det oppsto et problem under godkjenning av Google Maps-kontoen."
     }
   },
@@ -279,7 +279,7 @@
       "sale_price": "Salgspris",
       "regular_price": "Vanlig pris",
       "include_taxes": "Avgift inkludert.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Frakt</a> beregnes ved kassen.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Frakt<\/a> beregnes ved kassen.",
       "unit_price": "Enhetspris"
     },
     "product": {

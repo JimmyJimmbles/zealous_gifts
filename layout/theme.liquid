@@ -28,6 +28,7 @@
   <!-- CSS ================================================== -->
   {{ 'timber.scss.css' | asset_url | stylesheet_tag }}
   {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
+  {{ 'header.scss.css' | asset_url | stylesheet_tag }}
 
   <!-- Sections ================================================== -->
   <script>
@@ -53,9 +54,12 @@
 
   {{ 'jquery-2.2.3.min.js' | asset_url | script_tag }}
 
+  {{ 'lodash.js' | asset_url | script_tag }}
+
   <script src="{{ 'lazysizes.min.js' | asset_url }}" async="async"></script>
 
   <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'header.js' | asset_url }}" defer="defer"></script>
 
   <!-- Header hook for plugins ================================================== -->
   {{ content_for_header }}

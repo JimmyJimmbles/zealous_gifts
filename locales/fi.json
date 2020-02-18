@@ -11,7 +11,7 @@
     },
     "404": {
       "title": "404 Sivua ei löytynyt",
-      "subtext_html": "Etsimääsi sivua ei ole olemassa. Jatka ostoksia <a href=\"{{ link }}\" class=\"text-link\">napauttamalla tätä</a>."
+      "subtext_html": "Etsimääsi sivua ei ole olemassa. Jatka ostoksia <a href=\"{{ link }}\" class=\"text-link\">napauttamalla tätä<\/a>."
     },
     "pagination": {
       "previous": "Edellinen",
@@ -24,7 +24,7 @@
       "login_form_submit": "Siirry",
       "signup_form_email_label": "Sähköposti",
       "signup_form_success": "Lähetämme sinulle sähköpostiviestin juuri ennen avaamista!",
-      "admin_link_html": "Oletko kaupan omistaja? <a href=\"/admin\" class=\"text-link\">Kirjaudu sisään tästä</a>",
+      "admin_link_html": "Oletko kaupan omistaja? <a href=\"\/admin\" class=\"text-link\">Kirjaudu sisään tästä<\/a>",
       "password_link": "Siirry sisään käyttämällä salasanaa",
       "powered_by_shopify_html": "Tämän kaupan alustana on {{ shopify }}",
       "close": "sulje (esc)"
@@ -91,13 +91,13 @@
       "note": "Erityisohjeet myyjälle",
       "subtotal": "Välisumma",
       "taxes_and_shipping_at_checkout": "Verot ja toimituskulut lasketaan kassalla",
-      "taxes_and_shipping_policy_at_checkout_html": "Verot ja <a href=\"{{ link }}\">toimituskulut</a>lasketaan kassalla",
+      "taxes_and_shipping_policy_at_checkout_html": "Verot ja <a href=\"{{ link }}\">toimituskulut<\/a>lasketaan kassalla",
       "taxes_included_but_shipping_at_checkout": "Sisältää veron, toimituskulut lasketaan kassalla",
-      "taxes_included_and_shipping_policy_html": "Sisältää veron. <a href=\"{{ link }}\">Toimituskulut</a> lasketaan kassalla.",
+      "taxes_included_and_shipping_policy_html": "Sisältää veron. <a href=\"{{ link }}\">Toimituskulut<\/a> lasketaan kassalla.",
       "update": "Päivitä ostoskori",
       "checkout": "Maksu kassalle",
       "empty": "Ostoskorisi on tyhjä.",
-      "continue_browsing_html": "Jatka selailua <a href=\"{{ link }}\">täällä</a>.",
+      "continue_browsing_html": "Jatka selailua <a href=\"{{ link }}\">täällä<\/a>.",
       "close_cart": "Sulje ostoskori",
       "savings_html": "Säästät {{ savings }}",
       "reduce_quantity": "Pienennä tuotteen määrää yhdellä",
@@ -157,7 +157,7 @@
       "address1": "Osoite 1",
       "address2": "Osoite 2",
       "city": "Kaupunki",
-      "country": "Maa/alue",
+      "country": "Maa\/alue",
       "province": "Provinssi",
       "zip": "Postinumero",
       "phone": "Puhelin",
@@ -235,7 +235,7 @@
   },
   "home_page": {
     "slideshow": {
-      "navigation_instructions": "Siirry diaesitykseen vasemmalla/oikealla nuolella tai pyyhkäise vasemmalle/oikealle, jos käytät mobiililaitetta",
+      "navigation_instructions": "Siirry diaesitykseen vasemmalla\/oikealla nuolella tai pyyhkäise vasemmalle\/oikealle, jos käytät mobiililaitetta",
       "next_slide": "Seuraava dia",
       "previous_slide": "Edellinen dia",
       "play": "Toista diaesitys",
@@ -254,7 +254,7 @@
     "map": {
       "address_error": "Virhe etsittäessä tätä osoitetta",
       "address_no_results": "Tälle osoitteelle ei löytynyt tuloksia",
-      "address_query_limit_html": "Olet ylittänyt Google API: n käyttörajan. Harkitse päivitystä <a href=\"https://developers.google.com/maps/premium/usage-limits\">Premium-sopimukseen</a>.",
+      "address_query_limit_html": "Olet ylittänyt Google API: n käyttörajan. Harkitse päivitystä <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium-sopimukseen<\/a>.",
       "auth_error_html": "Google Maps -tilisi todentamisessa oli ongelma."
     }
   },
@@ -274,17 +274,17 @@
   },
   "products": {
     "general": {
-      "save_html": "Säästä<br />{{ saved_amount }}",
+      "save_html": "Säästä<br \/>{{ saved_amount }}",
       "collection_return": "Takaisin kohteeseen {{ collection }}",
       "sale_price": "Myyntihinta",
       "regular_price": "Normaalihinta",
       "include_taxes": "Sisältää veron.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Toimituskulut</a> lasketaan kassalla.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Toimituskulut<\/a> lasketaan kassalla.",
       "unit_price": "Yksikköhinta"
     },
     "product": {
       "sold_out": "Loppuunmyyty",
-      "sold_out_html": "Loppuunmyyty<br />",
+      "sold_out_html": "Loppuunmyyty<br \/>",
       "unavailable": "Ei käytettävissä",
       "quantity": "Määrä",
       "add_to_cart": "Lisää ostoskoriin",

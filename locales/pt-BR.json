@@ -11,7 +11,7 @@
     },
     "404": {
       "title": "404 Página não encontrada",
-      "subtext_html": "A página que você solicitou não existe. Clique <a href=\"{{ link }}\" class=\"text-link\">aqui</a> para voltar às compras."
+      "subtext_html": "A página que você solicitou não existe. Clique <a href=\"{{ link }}\" class=\"text-link\">aqui<\/a> para voltar às compras."
     },
     "pagination": {
       "previous": "Anterior",
@@ -24,7 +24,7 @@
       "login_form_submit": "Entrar",
       "signup_form_email_label": "E-mail",
       "signup_form_success": "Nós lhe enviaremos um e-mail logo antes de lançar a loja!",
-      "admin_link_html": "Você é o titular da loja? <a href=\"/admin\" class=\"text-link\">Entre aqui</a>",
+      "admin_link_html": "Você é o titular da loja? <a href=\"\/admin\" class=\"text-link\">Entre aqui<\/a>",
       "password_link": "Entre usando a senha",
       "powered_by_shopify_html": "Esta loja será lançada com tecnologia da {{ shopify }}",
       "close": "fechar (esc)"
@@ -91,13 +91,13 @@
       "note": "Instruções especiais para o vendedor",
       "subtotal": "Subtotal",
       "taxes_and_shipping_at_checkout": "Impostos e frete calculados no checkout",
-      "taxes_and_shipping_policy_at_checkout_html": "Impostos e <a href=\"{{ link }}\">frete</a> calculados no checkout",
+      "taxes_and_shipping_policy_at_checkout_html": "Impostos e <a href=\"{{ link }}\">frete<\/a> calculados no checkout",
       "taxes_included_but_shipping_at_checkout": "Imposto incluído e frete calculado no checkout",
-      "taxes_included_and_shipping_policy_html": "Imposto incluído. <a href=\"{{ link }}\">Frete</a> calculado no checkout.",
+      "taxes_included_and_shipping_policy_html": "Imposto incluído. <a href=\"{{ link }}\">Frete<\/a> calculado no checkout.",
       "update": "Atualizar carrinho",
       "checkout": "Finalizar pedido",
       "empty": "Seu carrinho está vazio no momento.",
-      "continue_browsing_html": "Continue navegando <a href=\"{{ link }}\">aqui</a>.",
+      "continue_browsing_html": "Continue navegando <a href=\"{{ link }}\">aqui<\/a>.",
       "close_cart": "Fechar carrinho",
       "savings_html": "Você está economizando {{ savings }}",
       "reduce_quantity": "Reduzir quantidade em uma unidade",
@@ -157,8 +157,8 @@
       "address1": "Endereço 1",
       "address2": "Endereço 2",
       "city": "Cidade",
-      "country": "País/região",
-      "province": "Província/Estado",
+      "country": "País\/região",
+      "province": "Província\/Estado",
       "zip": "CEP",
       "phone": "Telefone",
       "set_default": "Definir como endereço padrão",
@@ -235,7 +235,7 @@
   },
   "home_page": {
     "slideshow": {
-      "navigation_instructions": "Utilize as setas esquerda/direita para navegar pela apresentação de slides, ou deslize para a esquerda/direita se estiver usando um dispositivo móvel",
+      "navigation_instructions": "Utilize as setas esquerda\/direita para navegar pela apresentação de slides, ou deslize para a esquerda\/direita se estiver usando um dispositivo móvel",
       "next_slide": "Próximo slide",
       "previous_slide": "Slide anterior",
       "play": "Reproduzir apresentação de slides",
@@ -254,7 +254,7 @@
     "map": {
       "address_error": "Não é possível localizar o endereço",
       "address_no_results": "Nenhum resultado para este endereço",
-      "address_query_limit_html": "Você excedeu a cota de uso da API do Google. Considere a atualização para um <a href=\"https://developers.google.com/maps/premium/usage-limits\">Plano Premium</a>.",
+      "address_query_limit_html": "Você excedeu a cota de uso da API do Google. Considere a atualização para um <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Plano Premium<\/a>.",
       "auth_error_html": "Houve um problema ao autenticar sua conta do Google Maps."
     }
   },
@@ -274,12 +274,12 @@
   },
   "products": {
     "general": {
-      "save_html": "Economize<br />{{ saved_amount }}",
+      "save_html": "Economize<br \/>{{ saved_amount }}",
       "collection_return": "Voltar para {{ collection }}",
       "sale_price": "Preço promocional",
       "regular_price": "Preço normal",
       "include_taxes": "Imposto incluído.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Frete</a> calculado no checkout.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Frete<\/a> calculado no checkout.",
       "unit_price": "Preço unitário"
     },
     "product": {

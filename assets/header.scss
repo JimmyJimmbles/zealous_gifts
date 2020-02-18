@@ -1,0 +1,19 @@
+.site-header {
+  border-bottom: 2px solid #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  transition: transform 0.3s ease;
+
+  &.site-header--hidden {
+    transform: translateY(-100%);
+  }
+}
+
+.site-header__spacer {
+  position: relative;
+  display: block;
+  background-color: #ffffff;
+}

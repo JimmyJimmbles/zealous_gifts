@@ -11,7 +11,7 @@
     },
     "404": {
       "title": "找不到页面 404",
-      "subtext_html": "您查找的页面不存在。<a href=\"{{ link }}\" class=\"text-link\">单击此处</a>继续购物。"
+      "subtext_html": "您查找的页面不存在。<a href=\"{{ link }}\" class=\"text-link\">单击此处<\/a>继续购物。"
     },
     "pagination": {
       "previous": "Previous",
@@ -24,7 +24,7 @@
       "login_form_submit": "输入",
       "signup_form_email_label": "电子邮件",
       "signup_form_success": "在我们打开之前，我们会向您发送电子邮件！",
-      "admin_link_html": "您是否是商店所有者？<a href=\"/admin\" class=\"text-link\">在此处登录</a>",
+      "admin_link_html": "您是否是商店所有者？<a href=\"\/admin\" class=\"text-link\">在此处登录<\/a>",
       "password_link": "使用密码进入",
       "powered_by_shopify_html": "此商店由 {{ shopify }} 提供支持",
       "close": "关闭 (esc)"
@@ -91,13 +91,13 @@
       "note": "卖家须知",
       "subtotal": "小计",
       "taxes_and_shipping_at_checkout": "结账时计算的税金和运费",
-      "taxes_and_shipping_policy_at_checkout_html": "结账时计算的税金和<a href=\"{{ link }}\">运费</a>",
+      "taxes_and_shipping_policy_at_checkout_html": "结账时计算的税金和<a href=\"{{ link }}\">运费<\/a>",
       "taxes_included_but_shipping_at_checkout": "结账时计算的税金（包含）和运费",
-      "taxes_included_and_shipping_policy_html": "税金（包含）。结账时计算的<a href=\"{{ link }}\">运费</a>。",
+      "taxes_included_and_shipping_policy_html": "税金（包含）。结账时计算的<a href=\"{{ link }}\">运费<\/a>。",
       "update": "更新购物车",
       "checkout": "结账",
       "empty": "您的购物车当前是空的。",
-      "continue_browsing_html": "继续浏览<a href=\"{{ link }}\">此处</a>。",
+      "continue_browsing_html": "继续浏览<a href=\"{{ link }}\">此处<\/a>。",
       "close_cart": "关闭购物车",
       "savings_html": "您正在保存 {{ savings }}",
       "reduce_quantity": "将产品数量减少一件",
@@ -157,9 +157,9 @@
       "address1": "地址 1",
       "address2": "地址 2",
       "city": "城市",
-      "country": "国家/地区",
+      "country": "国家\/地区",
       "province": "省",
-      "zip": "邮编/邮政编码",
+      "zip": "邮编\/邮政编码",
       "phone": "电话",
       "set_default": "设为默认地址",
       "add": "添加地址",
@@ -235,7 +235,7 @@
   },
   "home_page": {
     "slideshow": {
-      "navigation_instructions": "使用左/右箭头浏览幻灯片或者在使用移动设备时向左/向右轻扫",
+      "navigation_instructions": "使用左\/右箭头浏览幻灯片或者在使用移动设备时向左\/向右轻扫",
       "next_slide": "下一张幻灯片",
       "previous_slide": "上一张幻灯片",
       "play": "播放幻灯片",
@@ -254,7 +254,7 @@
     "map": {
       "address_error": "查找该地址时出错",
       "address_no_results": "未找到该地址的结果",
-      "address_query_limit_html": "您已超过 Google API 使用限制。考虑升级到<a href=\"https://developers.google.com/maps/premium/usage-limits\">高级套餐</a>。",
+      "address_query_limit_html": "您已超过 Google API 使用限制。考虑升级到<a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">高级套餐<\/a>。",
       "auth_error_html": "对您的 Maps 帐户进行身份验证时出现问题。"
     }
   },
@@ -274,12 +274,12 @@
   },
   "products": {
     "general": {
-      "save_html": "保存<br />{0}",
+      "save_html": "保存<br \/>{0}",
       "collection_return": "返回到 {{ collection }}",
       "sale_price": "销售价格",
       "regular_price": "常规价格",
       "include_taxes": "税金（包含）。",
-      "shipping_policy_html": "结账时计算的<a href=\"{{ link }}\">运费</a>。",
+      "shipping_policy_html": "结账时计算的<a href=\"{{ link }}\">运费<\/a>。",
       "unit_price": "单价"
     },
     "product": {
