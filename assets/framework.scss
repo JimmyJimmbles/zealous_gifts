@@ -1,0 +1,25 @@
+// --------------------------------------------------
+// variables
+// --------------------------------------------------
+
+$btn-bg-color: #525be4;
+$btn-font-color: #545454;
+
+// --------------------------------------------------
+// base
+// --------------------------------------------------
+
+.btn {
+  background-color: $btn-bg-color !important;
+  border: 2px solid $btn-bg-color !important;
+  border-radius: 4px;
+  color: #fff;
+  line-height: normal;
+  font-weight: 600;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background-color: #fff !important;
+    color: $btn-font-color !important;
+  }
+}
