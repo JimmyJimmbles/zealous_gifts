@@ -28,9 +28,11 @@ $xlarge: $siteWidth + $viewportIncrement;
   flex-wrap: wrap;
 
   label.product-select__option {
+    border-width: 2px;
     flex-basis: 50%;
     max-width: 50%;
     margin: 0;
+    transition: all 0.15s ease;
 
     @media screen and ($min: $medium) {
       flex-basis: 25%;
@@ -53,4 +55,19 @@ $xlarge: $siteWidth + $viewportIncrement;
   padding: 15px;
   line-height: normal;
   cursor: pointer;
+}
+
+.product-form__input.text {
+  display: block;
+  border-radius: 4px;
+  line-height: normal;
+  padding: 15px;
+  width: 100%;
+}
+
+.single-option-radio input[type='radio']:checked + label,
+.product-single__thumbnail.active-thumb img {
+  border-color: #535be4;
+  border-width: 2px;
+  border-radius: 4px;
 }

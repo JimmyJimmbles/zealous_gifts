@@ -24,3 +24,13 @@ $btn-font-color: #545454;
     transition: all 0.3s ease !important;
   }
 }
+
+a {
+  color: #41a5df;
+  text-decoration: none;
+  background: transparent;
+
+  &:hover {
+    color: #39e58e;
+  }
+}

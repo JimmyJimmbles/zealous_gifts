@@ -5,7 +5,7 @@
     <meta itemprop="image" content="{{ product.featured_image.src | img_url: 'grande' }}">
 
     {% assign current_variant = product.selected_or_first_available_variant %}
-    {% assign featured_image = current_variant.featured_image | default: product.featured_image %}
+    {% assign featured_image = product.featured_image %}
 
     <div class="grid product-single">
       <div class="grid__item large--seven-twelfths medium--seven-twelfths text-center">
@@ -243,9 +243,18 @@
             {% capture "form_id" %}AddToCartForm--{{ section.id }}{%- endcapture %}
             {% form 'product', product, class:form_classes, id:form_id, data-product-form: '' %}
               {% unless product.has_only_default_variant %}
-                <div class="product-form__item product-form__item--logo">            
+                <div class="product-form__item product-form__item--logo">
                   <label for="custom_photo">Pet Pic</label>
-                  <input required id="custom_photo" type="file" name="properties[Pet Pic]" class="product-form__input file">           
+                  <input required id="custom_photo" type="file" name="properties[Pet Pic]" class="product-form__input file">
+                  <small>
+                    Please upload a high resolution picture to ensure the best print.<br>
+                    Check out the <a href="https://cdn.shopify.com/s/files/1/0322/4630/0809/files/allover-pillow-guideline.pdf?831" target="_blank" class="link">print guidelines</a> for more details.
+                  </small>
+                </div>
+                <hr class="hr--small">
+                <div class="product-form__item">
+                  <label for="custom_text">Your Text</label><br>
+                  <input required id="custom_text" type="text" name="properties[Custom Text]" placeholder="Good Boy!" class="product-form__input text">
                 </div>
                 <hr class="hr--small">
                 {% for option in product.options_with_values %}
@@ -294,29 +303,6 @@
                             {% endif %}
                           {% endfor %}
                         {% endfor %}
-                        <!-- {% for value in option.values %}
-                          {% assign variant_label_state = true %}
-                          {% if product.options.size == 1 %}
-                            {% unless product.variants[forloop.index0].available  %}
-                              {% assign variant_label_state = false %}
-                            {% endunless %}
-                          {% endif %}                      
-                          <input type="radio"
-                              {% if option.selected_value == value %} checked="checked"{% endif %}
-                              {% unless variant_label_state %} disabled="disabled"{% endunless %}
-                              value="{{ value | escape }}"
-                              data-index="option{{ option_index }}"
-                              name="option{{ option.position }}"
-                              class="single-option-selector__radio{% unless variant_label_state %} disabled{% endunless %}"
-                              id="ProductSelect-option-{{ option.name | handleize }}-{{ value | escape }}">
-                          <label 
-                            for="ProductSelect-option-{{ option.name | handleize }}-{{ value | escape }}"
-                            {% unless variant_label_state %} class="disabled"{% endunless %} 
-                            class="product-select__option">                            
-                            <img class="product-variant__thumb" src="{{ variant_img.src | img_url: '150x' }}" alt="{{ variant_img.alt | escape }}">                              
-                            <span class="product-variant-label">{{ value | escape }}</span>
-                          </label>
-                        {% endfor %} -->
                       </div>
                     {% else %}
                       <select class="single-option-selector__radio single-option-selector-{{ section.id }} product-form__input" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
@@ -348,12 +334,12 @@
               </select>
 
               {% if section.settings.quantity_enabled %}
-              <div class="product-single__quantity">
-                <label for="Quantity" class="product-single__quantity-label js-quantity-selector">{{ 'products.product.quantity' | t }}</label>
-                <input type="number" hidden="hidden" id="Quantity" name="quantity" value="1" min="1" class="js-quantity-selector">
-              </div>
+                <div class="product-single__quantity">
+                  <label for="Quantity" class="product-single__quantity-label js-quantity-selector">{{ 'products.product.quantity' | t }}</label>
+                  <input type="number" hidden="hidden" id="Quantity" name="quantity" value="1" min="1" class="js-quantity-selector">
+                </div>
               {% endif %}
-
+              <p>Please allow up to 5 days to fulfil your order. All orders will ship after fulfillment.</p>
               <div class="product-single__add-to-cart{% if section.settings.add_to_cart_button_size == 'large' %} product-single__add-to-cart--full-width{% endif %}">
                 <button type="submit" name="add" id="AddToCart--{{ section.id }}" class="btn btn--add-to-cart{% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}"{% unless current_variant.available %} disabled="disabled"{% endunless %}>
                   <span class="btn__text">
