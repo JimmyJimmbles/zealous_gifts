@@ -3,7 +3,7 @@
 // --------------------------------------------------
 
 .site-header {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #ececec;
   position: fixed;
   top: 0;
   left: 0;
@@ -14,10 +14,63 @@
   &.site-header--hidden {
     transform: translateY(-100%);
   }
+
+  .template-index & {
+    border-color: #ffffff;
+  }
 }
 
 .site-header__spacer {
   position: relative;
   display: block;
   background-color: #ffffff;
+}
+
+// --------------------------------------------------
+// nav
+// --------------------------------------------------
+
+.site-nav__item {
+  margin-right: 20px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background-color: darken(#41a5df, 15);
+    width: 0;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+
+  &.site-nav--active,
+  &:hover {
+    .site-nav__link {
+      color: darken(#41a5df, 15) !important;
+    }
+
+    &::after {
+      width: 100%;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.site-nav__link {
+  padding: 10px 0;
+
+  &:hover {
+    color: darken(#41a5df, 15) !important;
+  }
+}
+
+.cart-link__bubble--visible {
+  top: 10px !important;
+  right: -3px !important;
+  background-color: #525be4 !important;
 }
