@@ -1,3 +1,6 @@
+// variables
+const body = document.getElementsByTagName('body')[0];
+const isIndex = body.classList.contains('template-index');
 const header = document.querySelector('.site-header');
 const headerSpacer = document.querySelector('.site-header__spacer');
 const headerHeight = header.offsetHeight;
@@ -11,7 +14,12 @@ const handleHeaderVisibility = (scrollPos, oldScrollPos) => {
     header.classList.add('site-header--hidden');
   } else {
     header.classList.remove('site-header--hidden');
-    header.style.borderColor = '#FFFFFF';
+
+    if (!isIndex) {
+      header.style.borderColor = '#ececec';
+    } else {
+      header.style.borderColor = '#ffffff';
+    }
   }
 
   if (oldScrollPos > scrollPos && scrollPos != 0) {
