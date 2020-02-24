@@ -1,0 +1,56 @@
+// --------------------------------------------------
+// variables
+// --------------------------------------------------
+$min: min-width;
+$max: max-width;
+$viewportIncrement: 1px;
+$siteWidth: 1050px;
+$small: 590px;
+$medium: 768px;
+$large: 769px;
+$xlarge: $siteWidth + $viewportIncrement;
+
+// --------------------------------------------------
+// meta
+// --------------------------------------------------
+
+.product-single__meta {
+  transition: 0.3s ease all;
+}
+
+// --------------------------------------------------
+// radio options
+// --------------------------------------------------
+
+.single-option-radio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  label.product-select__option {
+    flex-basis: 50%;
+    max-width: 50%;
+    margin: 0;
+
+    @media screen and ($min: $medium) {
+      flex-basis: 25%;
+      max-width: 25%;
+    }
+
+    .product-variant-label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .product-variant__thumb {
+      border-radius: 4px;
+    }
+  }
+}
+
+.product-form__input.file {
+  border-radius: 4px;
+  padding: 15px;
+  line-height: normal;
+  cursor: pointer;
+}

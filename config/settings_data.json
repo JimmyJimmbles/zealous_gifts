@@ -6,7 +6,7 @@
     "color_borders": "#41a5df",
     "color_button_text": "#ffffff",
     "color_primary": "#515be4",
-    "color_secondary": "#39e58e",
+    "color_secondary": "#41a5df",
     "color_product_background": "#f6f6f6",
     "color_sale_tag": "#fb3f59",
     "color_input": "#f6f6f6",
@@ -41,22 +41,22 @@
     "social_fancy_link": "",
     "share_facebook": true,
     "share_twitter": true,
-    "share_pinterest": true,
+    "share_pinterest": false,
     "favicon": "shopify:\/\/shop_images\/Zealous_Gifts_Logo.png",
     "checkout_header_image": "",
-    "checkout_logo_image": "",
-    "checkout_logo_position": "left",
-    "checkout_logo_size": "small",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Zealous_Gifts_Logo_final.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
     "checkout_body_background_image": "",
     "checkout_body_background_color": "#ffffff",
     "checkout_input_background_color_mode": "white",
     "checkout_sidebar_background_image": "",
-    "checkout_sidebar_background_color": "#fff4f6",
+    "checkout_sidebar_background_color": "#f6f6f6",
     "checkout_heading_font": "Helvetica Neue",
     "checkout_body_font": "Roboto",
-    "checkout_accent_color": "#7737bd",
-    "checkout_button_color": "#7737bd",
-    "checkout_error_color": "#f01130",
+    "checkout_accent_color": "#41a5df",
+    "checkout_button_color": "#515be4",
+    "checkout_error_color": "#fb3f59",
     "checkout_banner_background_color": "#fff",
     "checkout_call_to_action_color": "#a26b25",
     "checkout_use_header_image": false,
@@ -79,7 +79,7 @@
               "text_alignment": "center",
               "slide_heading": "Personalized Pet Pillows",
               "slide_subheading": "Handmade gifts personalized to you!",
-              "button_label": "Get your pillow now!",
+              "button_label": "Get yours now!",
               "button_link": "shopify:\/\/products\/personalized-pet-pillow",
               "slide_text_color": "#ffffff",
               "slide_button_label_color": "#ffffff",
@@ -99,7 +99,7 @@
       "featured-products": {
         "type": "featured-products",
         "settings": {
-          "title": "Personalized Pet Pillows!",
+          "title": "Make it Yours",
           "home_featured_products": "pet-pillows",
           "collection_products_grid": "collage"
         }
@@ -107,8 +107,8 @@
       "newsletter": {
         "type": "newsletter",
         "settings": {
-          "heading": "Subscribe to our newsletter",
-          "subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+          "heading": "Get Discounts!",
+          "subheading": "<p>Subscribe to our email list&nbsp;to receive discounts and&nbsp;deals.<br>Keep up to date with new products and special offers<\/p>"
         }
       },
       "header": {
@@ -136,70 +136,31 @@
         "type": "footer",
         "settings": {
           "footer_link_list": "footer",
-          "show_payment_icons": false
+          "show_payment_icons": true
         }
       },
       "collection-template": {
         "type": "collection-template",
         "settings": {
-          "show_collection_image": false,
+          "show_collection_image": true,
           "collection_sort_enable": false,
           "collection_tags_enable": false,
           "collection_products_grid": "grid",
           "product_vendor_enable": false
         }
       },
-      "1494860348200": {
-        "type": "featured-row",
-        "settings": {
-          "image": "",
-          "layout": "right",
-          "title": "Image with text",
-          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-          "button_label": "",
-          "button_link": ""
-        }
-      },
-      "1494894035034": {
-        "type": "featured-row",
-        "settings": {
-          "image": "",
-          "layout": "left",
-          "title": "Image with text",
-          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-          "button_label": "",
-          "button_link": ""
-        }
-      },
       "product-template": {
         "type": "product-template",
         "settings": {
-          "zoom_enable": false,
+          "zoom_enable": true,
           "social_sharing_products": true,
-          "product_vendor_enable": false,
-          "image_layout": "stacked",
-          "quantity_enabled": false,
+          "product_vendor_enable": true,
+          "image_layout": "thumbnails",
+          "quantity_enabled": true,
           "product_selector": "radio",
           "enable_payment_button": true,
           "add_to_cart_button_size": "small"
         }
-      },
-      "1496078102297": {
-        "type": "advanced-content",
-        "blocks": {
-          "1496078102297-0": {
-            "type": "html",
-            "settings": {
-              "code": "<div style=\"text-align:center;\">\n<h1 class=\"h1\">Use HTML to format your text so it can be easily read.<\/h1>This text can be used to share information about your brand with customers.<\/div>",
-              "width": "100%",
-              "alignment": "top-middle"
-            }
-          }
-        },
-        "block_order": [
-          "1496078102297-0"
-        ],
-        "settings": {}
       },
       "1496177901425": {
         "type": "advanced-content",
@@ -207,7 +168,7 @@
           "1496177901425-0": {
             "type": "html",
             "settings": {
-              "code": "<div style=\"max-width:745px;text-align: center; margin: 0 auto;\">This text can be used to share information about your brand with customers.<\/div>",
+              "code": "<div style=\"max-width:745px;text-align: center; margin: 0 auto;\">Each pillow is hand made with care and delivered to your door!<br>\nShowcase your good boy or girl, get yours now! <\/div>",
               "width": "100%",
               "alignment": "top-middle"
             }
@@ -217,16 +178,47 @@
           "1496177901425-0"
         ],
         "settings": {}
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "Hey! Looks like you may also like these:"
+        }
+      },
+      "password-header": {
+        "type": "password-header",
+        "settings": {
+          "logo": "",
+          "logo_max_width": "200"
+        }
+      },
+      "password-content": {
+        "type": "password-content",
+        "settings": {
+          "title": "Opening Soon",
+          "newsletter_enable": true,
+          "newsletter_form_heading": "Be the first to know when we launch.",
+          "newsletter_form_subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>",
+          "newsletter_placeholder": "Email address",
+          "newsletter_button_text": "Submit",
+          "show_share_buttons": true,
+          "social_message": "Spread the word"
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "display_type": "all",
+          "sort": "alphabetical"
+        }
       }
     },
     "content_for_index": [
       "slideshow",
-      "1496177901425",
       "featured-products",
-      "newsletter",
-      "1496078102297",
-      "1494860348200",
-      "1494894035034"
+      "1496177901425",
+      "newsletter"
     ]
   },
   "presets": {
