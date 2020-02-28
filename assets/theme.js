@@ -9514,7 +9514,7 @@ theme.Product = (function() {
             )
             .prependTo($(this.selectors.productImages, this.$container));
           // Switch image variant for thumnail layout
-          // this.switchImage(variant.featured_image.id);
+          this.switchImage(variant.featured_image.id);
         }
       }
 

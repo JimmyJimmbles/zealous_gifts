@@ -243,6 +243,24 @@
             {% capture "form_id" %}AddToCartForm--{{ section.id }}{%- endcapture %}
             {% form 'product', product, class:form_classes, id:form_id, data-product-form: '' %}
               {% unless product.has_only_default_variant %}
+                {% if section.settings.custom_image_upload %}
+                  <div class="product-form__item product-form__item--logo">
+                    <label for="custom_photo">Cusotm Pic</label>
+                    <input required id="custom_photo" type="file" name="properties[Cusotm Pic]" class="product-form__input file">
+                    <small>
+                      Please upload a high resolution picture to ensure the best print.<br>
+                      Check out the <a href="https://cdn.shopify.com/s/files/1/0322/4630/0809/files/allover-pillow-guideline.pdf?831" target="_blank" class="link">print guidelines</a> for more details.
+                    </small>
+                  </div>
+                  <hr class="hr--small">
+                {% endif %}
+                {% if section.settings.custom_text_message %}
+                  <div class="product-form__item">
+                    <label for="custom_text">Your Text</label><br>
+                    <input required id="custom_text" type="text" name="properties[Custom Text]" placeholder="Good Boy!" class="product-form__input text">
+                  </div>
+                  <hr class="hr--small">
+                {% endif %}
                 {% for option in product.options_with_values %}
                   <div class="radio-wrapper js product-form__item">
                     <label class="single-option-radio__label"
@@ -412,6 +430,20 @@
                 "zh-CN": "启用图片缩放",
                 "zh-TW": "啟用圖片縮放"
             }
+        }, {
+            "type": "checkbox",
+            "id": "custom_image_upload",
+            "label": {
+                "en": "Allow custom image upload"
+            },
+            "default": true
+        }, {
+            "type": "checkbox",
+            "id": "custom_text_message",
+            "label": {
+                "en": "Allow custom text message"
+            },
+            "default": true
         }, {
             "type": "checkbox",
             "id": "social_sharing_products",

@@ -72,15 +72,15 @@
           "1495823280244": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/happy_dog_blue.png",
+              "image": "shopify:\/\/shop_images\/st_patty_bg_2f286856-0647-4635-b992-ce85bcc72a1e.png",
               "image_position": "center center",
               "image_overlay": true,
               "image_overlay_opacity": 10,
               "text_alignment": "center",
-              "slide_heading": "Personalized Pet Pillows",
+              "slide_heading": "St. Patrick's Day gifts",
               "slide_subheading": "Handmade gifts personalized to you!",
-              "button_label": "Get yours now!",
-              "button_link": "shopify:\/\/products\/personalized-pet-pillow",
+              "button_label": "Make it yours!",
+              "button_link": "shopify:\/\/products\/t-shirt-1",
               "slide_text_color": "#ffffff",
               "slide_button_label_color": "#ffffff",
               "slide_button_background_color": "#515be4"
@@ -99,9 +99,9 @@
       "featured-products": {
         "type": "featured-products",
         "settings": {
-          "title": "Make it Yours",
-          "home_featured_products": "pet-pillows",
-          "collection_products_grid": "collage"
+          "title": "Featured Products:",
+          "home_featured_products": "featured-products",
+          "collection_products_grid": "grid"
         }
       },
       "newsletter": {
@@ -158,8 +158,8 @@
           "image_layout": "thumbnails",
           "quantity_enabled": true,
           "product_selector": "radio",
-          "enable_payment_button": true,
-          "add_to_cart_button_size": "small"
+          "enable_payment_button": false,
+          "add_to_cart_button_size": "large"
         }
       },
       "1496177901425": {
@@ -168,7 +168,7 @@
           "1496177901425-0": {
             "type": "html",
             "settings": {
-              "code": "<div style=\"max-width:745px;text-align: center; margin: 0 auto;\">Each pillow is hand made with care and delivered to your door!<br>\nShowcase your good boy or girl, get yours now! <\/div>",
+              "code": "<div style=\"max-width:745px;text-align: center; margin: 0 auto;\">Handcrafted gifts designed and personalized for you.<\/div>",
               "width": "100%",
               "alignment": "top-middle"
             }
@@ -212,13 +212,45 @@
           "display_type": "all",
           "sort": "alphabetical"
         }
+      },
+      "1582671202565": {
+        "type": "featured-content",
+        "settings": {
+          "home_page_full_width": false,
+          "section_title": "Look who's a curious lil one.",
+          "text": "<p>We want to make you and your friends happy, by delivering super duper awesome products with a unique flavor to match whatever taste you have.<\/p>\n<p>Who doesn't like things? Why not get awesome things personalized to you!<br>Or don't, it's your life you can do whatever you want. I am just a website, I can't make you do anything.<\/p>\n<p>Life should already be all about you and what you want, we want to ensure&nbsp;that doesn't change. Spoil yourself, or&nbsp;a friend. Heck, even a family member, I'm sure Meme will love it!<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "product-template-personalized": {
+        "type": "product-template-personalized",
+        "settings": {
+          "zoom_enable": true,
+          "social_sharing_products": true,
+          "product_vendor_enable": true,
+          "image_layout": "thumbnails",
+          "quantity_enabled": true,
+          "product_selector": "radio",
+          "enable_payment_button": false,
+          "add_to_cart_button_size": "large"
+        }
+      },
+      "1582850166967": {
+        "type": "featured-products",
+        "settings": {
+          "title": "Personalized  St. Patrick's Day Gifts",
+          "home_featured_products": "st-patricks-day-gifts",
+          "collection_products_grid": "grid"
+        }
       }
     },
     "content_for_index": [
       "slideshow",
+      "1582850166967",
       "featured-products",
       "1496177901425",
-      "newsletter"
+      "newsletter",
+      "1582671202565"
     ]
   },
   "presets": {
