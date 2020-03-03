@@ -143,7 +143,7 @@
         "type": "collection-template",
         "settings": {
           "show_collection_image": true,
-          "collection_sort_enable": false,
+          "collection_sort_enable": true,
           "collection_tags_enable": false,
           "collection_products_grid": "grid",
           "product_vendor_enable": false
@@ -157,7 +157,7 @@
           "product_vendor_enable": true,
           "image_layout": "thumbnails",
           "quantity_enabled": true,
-          "product_selector": "radio",
+          "product_selector": "select",
           "enable_payment_button": false,
           "add_to_cart_button_size": "large"
         }
@@ -226,6 +226,8 @@
         "type": "product-template-personalized",
         "settings": {
           "zoom_enable": true,
+          "custom_image_upload": true,
+          "custom_text_message": true,
           "social_sharing_products": true,
           "product_vendor_enable": true,
           "image_layout": "thumbnails",
@@ -241,6 +243,36 @@
           "title": "Personalized  St. Patrick's Day Gifts",
           "home_featured_products": "st-patricks-day-gifts",
           "collection_products_grid": "grid"
+        }
+      },
+      "product-template-personalized-pic": {
+        "type": "product-template-personalized-pic",
+        "settings": {
+          "zoom_enable": true,
+          "custom_image_upload": true,
+          "custom_text_message": false,
+          "social_sharing_products": true,
+          "product_vendor_enable": true,
+          "image_layout": "thumbnails",
+          "quantity_enabled": true,
+          "product_selector": "select",
+          "enable_payment_button": true,
+          "add_to_cart_button_size": "small"
+        }
+      },
+      "product-template-personalized-text": {
+        "type": "product-template-personalized-text",
+        "settings": {
+          "zoom_enable": true,
+          "custom_text_message_1": true,
+          "custom_text_message_2": false,
+          "social_sharing_products": true,
+          "product_vendor_enable": true,
+          "image_layout": "thumbnails",
+          "quantity_enabled": true,
+          "product_selector": "select",
+          "enable_payment_button": true,
+          "add_to_cart_button_size": "large"
         }
       }
     },

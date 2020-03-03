@@ -3,14 +3,26 @@ const body = document.getElementsByTagName('body')[0];
 const isIndex = body.classList.contains('template-index');
 const header = document.querySelector('.site-header');
 const headerSpacer = document.querySelector('.site-header__spacer');
-const headerHeight = header.offsetHeight;
+const announcementBar = document.querySelector('.announcement-bar');
+const hideAnchor = header.offsetHeight + 45;
 let ticking = false;
 let oldScrollPos = 0;
 
-headerSpacer.style.height = `${headerHeight}px`;
+headerSpacer.style.height = `${header.offsetHeight}px`;
 
 const handleHeaderVisibility = (scrollPos, oldScrollPos) => {
-  if (scrollPos >= headerHeight) {
+  if (announcementBar) {
+    const announcementBarHeight = announcementBar.offsetHeight;
+    if (scrollPos <= announcementBarHeight) {
+      header.style.position = 'relative';
+    } else {
+      header.style.position = 'fixed';
+    }
+  } else {
+    header.style.position = 'fixed';
+  }
+
+  if (scrollPos >= hideAnchor) {
     header.classList.add('site-header--hidden');
   } else {
     header.classList.remove('site-header--hidden');
