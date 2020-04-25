@@ -72,23 +72,41 @@
           "1495823280244": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/st_patty_bg_2f286856-0647-4635-b992-ce85bcc72a1e.png",
+              "image": "shopify:\/\/shop_images\/m-day-bg-2.png",
               "image_position": "center center",
               "image_overlay": true,
               "image_overlay_opacity": 10,
               "text_alignment": "center",
-              "slide_heading": "St. Patrick's Day gifts",
-              "slide_subheading": "GET UP TO 40% OFF SELECT GIFTS",
-              "button_label": "Shop Deals!",
-              "button_link": "shopify:\/\/products\/t-shirt-1",
+              "slide_heading": "Mother's Day Deals!",
+              "slide_subheading": "UP TO 40% OFF",
+              "button_label": "Shop Gifts!",
+              "button_link": "shopify:\/\/collections\/all",
               "slide_text_color": "#ffffff",
               "slide_button_label_color": "#ffffff",
               "slide_button_background_color": "#515be4"
             }
+          },
+          "1587844286265": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/clothing-accessories-flatlay.jpg",
+              "image_position": "center center",
+              "image_overlay": true,
+              "image_overlay_opacity": 25,
+              "text_alignment": "center",
+              "slide_heading": "Personalized Products",
+              "slide_subheading": "Unique to Match Your Style",
+              "button_label": "Shop now",
+              "button_link": "shopify:\/\/collections\/all",
+              "slide_text_color": "#ffffff",
+              "slide_button_label_color": "#ffffff",
+              "slide_button_background_color": "#ffffff"
+            }
           }
         },
         "block_order": [
-          "1495823280244"
+          "1495823280244",
+          "1587844286265"
         ],
         "settings": {
           "home_hero_height": "adapt",
@@ -99,9 +117,9 @@
       "featured-products": {
         "type": "featured-products",
         "settings": {
-          "title": "Featured Products:",
-          "home_featured_products": "featured-products",
-          "collection_products_grid": "grid"
+          "title": "Perfect Mother's Day Gifts",
+          "home_featured_products": "mothers-day",
+          "collection_products_grid": "collage"
         }
       },
       "newsletter": {
@@ -162,23 +180,6 @@
           "add_to_cart_button_size": "large"
         }
       },
-      "1496177901425": {
-        "type": "advanced-content",
-        "blocks": {
-          "1496177901425-0": {
-            "type": "html",
-            "settings": {
-              "code": "<div style=\"max-width:745px;text-align: center; margin: 0 auto;\">Handcrafted gifts designed and personalized for you.<\/div>",
-              "width": "100%",
-              "alignment": "top-middle"
-            }
-          }
-        },
-        "block_order": [
-          "1496177901425-0"
-        ],
-        "settings": {}
-      },
       "product-recommendations": {
         "type": "product-recommendations",
         "settings": {
@@ -213,15 +214,6 @@
           "sort": "alphabetical"
         }
       },
-      "1582671202565": {
-        "type": "featured-content",
-        "settings": {
-          "home_page_full_width": false,
-          "section_title": "Look who's a curious lil one.",
-          "text": "<p>We want to make you and your friends happy, by delivering super duper awesome products with a unique flavor to match whatever taste you have.<\/p>\n<p>Who doesn't like things? Why not get awesome things personalized to you!<br>Or don't, it's your life you can do whatever you want. I am just a website, I can't make you do anything.<\/p>\n<p>Life should already be all about you and what you want, we want to ensure&nbsp;that doesn't change. Spoil yourself, or&nbsp;a friend. Heck, even a family member, I'm sure Meme will love it!<\/p>",
-          "text_size": "medium"
-        }
-      },
       "product-template-personalized": {
         "type": "product-template-personalized",
         "settings": {
@@ -235,14 +227,6 @@
           "product_selector": "radio",
           "enable_payment_button": false,
           "add_to_cart_button_size": "large"
-        }
-      },
-      "1582850166967": {
-        "type": "featured-products",
-        "settings": {
-          "title": "Personalized  St. Patrick's Day Gifts",
-          "home_featured_products": "st-patricks-day-gifts",
-          "collection_products_grid": "grid"
         }
       },
       "product-template-personalized-pic": {
@@ -274,15 +258,24 @@
           "enable_payment_button": true,
           "add_to_cart_button_size": "large"
         }
+      },
+      "1587844876249": {
+        "type": "featured-row",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/cavalier-king-charles-dog.jpg",
+          "layout": "left",
+          "title": "Pet Lovers Needs",
+          "text": "<p>Your pet rocks, show them off to the world with high quality personalized gifts featuring your fur baby.&nbsp;<\/p>\n<p>From custom phone cases to printed pillows create a unique gift to match whatever&nbsp;style is special to you.<\/p>",
+          "button_label": "Shop Now",
+          "button_link": "shopify:\/\/collections\/accessories"
+        }
       }
     },
     "content_for_index": [
       "slideshow",
-      "1582850166967",
       "featured-products",
-      "1496177901425",
       "newsletter",
-      "1582671202565"
+      "1587844876249"
     ]
   },
   "presets": {
