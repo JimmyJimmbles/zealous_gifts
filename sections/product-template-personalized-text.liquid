@@ -339,7 +339,7 @@
                   <input type="number" hidden="hidden" id="Quantity" name="quantity" value="1" min="1" class="js-quantity-selector">
                 </div>
               {% endif %}
-              <p>Please allow up to 5 days to fulfil your order. All orders will ship after fulfillment.</p>
+              <p>Please allow up to 7 days to fulfil your order. All orders will ship after fulfillment.</p>
               <div class="product-single__add-to-cart{% if section.settings.add_to_cart_button_size == 'large' %} product-single__add-to-cart--full-width{% endif %}">
                 <button type="submit" name="add" id="AddToCart--{{ section.id }}" class="btn btn--add-to-cart{% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}"{% unless current_variant.available %} disabled="disabled"{% endunless %}>
                   <span class="btn__text">
@@ -368,6 +368,9 @@
         </div>
       </div>
     </div>
+{% comment %}Start automatically added Judge.me widget{% endcomment %}
+  {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true, product: product %}
+{% comment %}End automatically added Judge.me widget{% endcomment %}
 </div>
 {% unless product == empty %}
   <script type="application/json" id="ProductJson-{{ section.id }}">

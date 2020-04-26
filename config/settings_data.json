@@ -80,7 +80,7 @@
               "slide_heading": "Mother's Day Deals!",
               "slide_subheading": "UP TO 40% OFF",
               "button_label": "Shop Gifts!",
-              "button_link": "shopify:\/\/collections\/all",
+              "button_link": "shopify:\/\/collections\/mothers-day",
               "slide_text_color": "#ffffff",
               "slide_button_label_color": "#ffffff",
               "slide_button_background_color": "#515be4"
@@ -119,7 +119,7 @@
         "settings": {
           "title": "Perfect Mother's Day Gifts",
           "home_featured_products": "mothers-day",
-          "collection_products_grid": "collage"
+          "collection_products_grid": "grid"
         }
       },
       "newsletter": {
@@ -267,15 +267,34 @@
           "title": "Pet Lovers Needs",
           "text": "<p>Your pet rocks, show them off to the world with high quality personalized gifts featuring your fur baby.&nbsp;<\/p>\n<p>From custom phone cases to printed pillows create a unique gift to match whatever&nbsp;style is special to you.<\/p>",
           "button_label": "Shop Now",
-          "button_link": "shopify:\/\/collections\/accessories"
+          "button_link": "shopify:\/\/collections\/pet-lovers"
+        }
+      },
+      "1587872987815": {
+        "type": "featured-content",
+        "settings": {
+          "home_page_full_width": false,
+          "section_title": "",
+          "text": "<p>Surprise&nbsp;your&nbsp;mom this&nbsp;Mother's Day&nbsp;with a personalized gift unique to her.&nbsp;<br>Show&nbsp;her just how special she is with a thoughtful&nbsp;gift.<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "1587909833514": {
+        "type": "featured-products",
+        "settings": {
+          "title": "",
+          "home_featured_products": "pet-lovers",
+          "collection_products_grid": "grid"
         }
       }
     },
     "content_for_index": [
       "slideshow",
       "featured-products",
+      "1587872987815",
       "newsletter",
-      "1587844876249"
+      "1587844876249",
+      "1587909833514"
     ]
   },
   "presets": {

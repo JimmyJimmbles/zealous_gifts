@@ -27,6 +27,7 @@
             {% comment %}
               Display current variant image
             {% endcomment %}
+            {{ featured_image.alt | escape }}
             <div class="product-single__photo--flex-wrapper">
               <div class="product-single__photo--flex">
                 {% include 'image-style' with image: featured_image, width: 575, height: 850, small_style: true, wrapper_id: wrapper_id, img_id_class: img_id_class %}
@@ -189,18 +190,20 @@
 
             {% comment %}
               Display thumbnails
-              <ul class="product-single__thumbnails small--hide grid-uniform" id="ProductThumbs">
-                {% for image in product.images %}
-                {% if product.images.size > 1 %}
-                <li class="grid__item medium--one-third large--one-quarter product-single__photo-wrapper">
-                  <a data-image-id="{{ image.id }}" href="{{ image.src | img_url: 'grande' }}" class="product-single__thumbnail {% if image contains featured_image %} active-thumb{% endif %}">
-                    <img class="product-single__thumb" src="{{ image.src | img_url: '150x' }}" alt="{{ image.alt | escape }}">
-                  </a>
-                </li>
-                {% endif %}
-                {% endfor %}
-              </ul>
-            {% endcomment %}
+            {% endcomment %}            
+            <ul class="product-single__thumbnails small--hide grid-uniform" id="ProductThumbs">
+              {% for image in product.images %}
+                {% unless image.alt contains 'variant-img' %}
+                  {% if product.images.size > 1 %}
+                    <li class="grid__item medium--one-third large--one-quarter product-single__photo-wrapper">
+                      <a data-image-id="{{ image.id }}" href="{{ image.src | img_url: 'grande' }}" class="product-single__thumbnail {% if image contains featured_image %} active-thumb{% endif %}">
+                        <img class="product-single__thumb" src="{{ image.src | img_url: '150x' }}" alt="{{ image.alt | escape }}">
+                      </a>
+                    </li>
+                  {% endif %}
+                {% endunless %}
+              {% endfor %}
+            </ul>
 
           </div>
         {% endif %}
@@ -343,7 +346,7 @@
                   <input type="number" hidden="hidden" id="Quantity" name="quantity" value="1" min="1" class="js-quantity-selector">
                 </div>
               {% endif %}
-              <p>Please allow up to 5 days to fulfil your order. All orders will ship after fulfillment.</p>
+              <p>Please allow up to 7 days to fulfil your order. All orders will ship after fulfillment.</p>
               <div class="product-single__add-to-cart{% if section.settings.add_to_cart_button_size == 'large' %} product-single__add-to-cart--full-width{% endif %}">
                 <button type="submit" name="add" id="AddToCart--{{ section.id }}" class="btn btn--add-to-cart{% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}"{% unless current_variant.available %} disabled="disabled"{% endunless %}>
                   <span class="btn__text">
@@ -372,6 +375,9 @@
         </div>
       </div>
     </div>
+{% comment %}Start automatically added Judge.me widget{% endcomment %}
+  {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true, product: product %}
+{% comment %}End automatically added Judge.me widget{% endcomment %}
 </div>
 {% unless product == empty %}
   <script type="application/json" id="ProductJson-{{ section.id }}">
