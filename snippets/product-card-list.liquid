@@ -26,6 +26,7 @@
       <div class="list-view-item__title" aria-hidden="true">
         <span class="product-card__title">{{ product.title }}</span>
       </div>
+      <div>{% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: false, product: product %}</div>
       {% if show_vendor %}
         <div class="list-view-item__vendor">{{ product.vendor }}</div>
       {% endif %}
